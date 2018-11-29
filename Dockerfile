@@ -1,5 +1,5 @@
 FROM php:7.2
-LABEL maintainer="darkhejmaster@gmail.com"
+LABEL maintainer="CWallenberg"
 
 WORKDIR /var/www
 #COPY . /var/www
