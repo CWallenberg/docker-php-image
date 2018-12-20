@@ -11,6 +11,7 @@ RUN buildDeps=" \
         libsasl2-dev \
     " \
     runtimeDeps=" \
+        lftp \
         curl \
         git \
         libfreetype6-dev \
