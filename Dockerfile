@@ -36,6 +36,7 @@ RUN buildDeps=" \
         libpq-dev \
         libxml2-dev \
 		libgmp-dev \
+        wget \
     " \
     && apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y $buildDeps $runtimeDeps \
     && bash ./nodejs.sh \
