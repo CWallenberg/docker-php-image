@@ -1,13 +1,13 @@
-FROM php:7.2
+FROM php:7.3
 LABEL maintainer="CWallenberg" \
     node="10" \
-    php="7.2"
+    php="7.3"
 
 WORKDIR /var/www
 #COPY . /var/www
 
 # COPY INSTALL SCRIPTS
-COPY ./scripts/*.sh /var/www/
+COPY ./../scripts/*.sh /var/www/
 RUN chmod +x /var/www/*.sh
 
 # Env variables
