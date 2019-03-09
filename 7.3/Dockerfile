@@ -18,6 +18,7 @@ RUN buildDeps=" \
         default-libmysqlclient-dev \
         libbz2-dev \
         libsasl2-dev \
+	libzip-dev \
     " \
     runtimeDeps=" \
         apt-utils \
