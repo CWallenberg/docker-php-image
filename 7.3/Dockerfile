@@ -18,7 +18,6 @@ RUN buildDeps=" \
         default-libmysqlclient-dev \
         libbz2-dev \
         libsasl2-dev \
-	libzip-dev \
     " \
     runtimeDeps=" \
         apt-utils \
@@ -35,6 +34,7 @@ RUN buildDeps=" \
         libpng-dev \
         libpq-dev \
         libxml2-dev \
+        libzip-dev \
 		libgmp-dev \
         make \
         wget \

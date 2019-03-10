@@ -21,13 +21,12 @@ RUN buildDeps=" \
     " \
     runtimeDeps=" \
         apt-utils \
+        curl \
+        g++ \
+        gcc \
+        git \
         gnupg2 \
         lftp \
-        curl \
-        git \
-        gcc \
-        g++ \
-        make \
         libfreetype6-dev \
         libicu-dev \
         libjpeg-dev \
@@ -36,6 +35,7 @@ RUN buildDeps=" \
         libpq-dev \
         libxml2-dev \
 		libgmp-dev \
+        make \
         wget \
     " \
     && apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y $buildDeps $runtimeDeps \
