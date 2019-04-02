@@ -1,6 +1,6 @@
 FROM php:7.3
 LABEL maintainer="CWallenberg" \
-    node="10" \
+    node="11" \
     php="7.3"
 
 WORKDIR /var/www
@@ -40,7 +40,7 @@ RUN buildDeps=" \
         wget \
     " \
     && apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y $buildDeps $runtimeDeps \
-    && bash ./nodejs.sh \
+    && bash ./nodejs-11.sh \
     && docker-php-ext-install bcmath bz2 calendar iconv intl mbstring mysqli opcache pdo_mysql soap zip \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install gd \
